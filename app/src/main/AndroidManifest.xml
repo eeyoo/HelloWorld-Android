@@ -3,7 +3,6 @@
           package="com.example.feilin.myapplication">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
@@ -19,11 +18,6 @@
         <activity android:name=".activity.SharedPreferencesActivity">
         </activity>
         <activity android:name=".activity.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".activity.SQLiteDatabaseActivity">
         </activity>
@@ -42,10 +36,20 @@
         </receiver>
 
         <activity android:name=".activity.BroadcastReceiverActivity">
-
         </activity>
         <activity android:name=".activity.LocalBroadcastActivity">
+        </activity>
+        <activity android:name=".activity.PullToRefreshActivity">
+        </activity>
+        <activity android:name=".activity.ThreadsActivity">
 
+        </activity>
+        <activity android:name=".activity.ListViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
