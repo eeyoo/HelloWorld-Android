@@ -1,7 +1,10 @@
 package com.example.feilin.myapplication.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.feilin.myapplication.R;
@@ -33,6 +36,17 @@ public class ListViewActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.listview);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Fruit fruit = fruitList.get(position);
+                //Toast.makeText(ListViewActivity.this, fruit.getName(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ListViewActivity.this, ImageViewActivity.class);
+                intent.putExtra("resource_id", fruit.getImageId());
+                startActivity(intent);
+            }
+        });
     }
 
     private void initFruits() {
