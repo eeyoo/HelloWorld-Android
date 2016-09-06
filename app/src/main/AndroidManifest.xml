@@ -44,11 +44,13 @@
         <activity android:name=".activity.ThreadsActivity">
         </activity>
         <activity android:name=".activity.ListViewActivity">
-
         </activity>
         <activity android:name=".activity.ImageViewActivity">
         </activity>
         <activity android:name=".activity.ServiceTutorialActivity">
+
+        </activity>
+        <activity android:name=".activity.ActivityDownloadAsyncTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
