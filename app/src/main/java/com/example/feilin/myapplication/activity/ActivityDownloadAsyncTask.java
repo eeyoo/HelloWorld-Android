@@ -41,12 +41,14 @@ public class ActivityDownloadAsyncTask extends AppCompatActivity {
         @Override
         protected Boolean doInBackground(Void... voids) {
 
-            try {
+            /*try {
+                publishProgress(0);
                 Thread.sleep(3000);
                 publishProgress(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+            }*/
+
             return true;
         }
 

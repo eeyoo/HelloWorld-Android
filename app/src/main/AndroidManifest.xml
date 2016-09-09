@@ -47,15 +47,24 @@
         </activity>
         <activity android:name=".activity.ImageViewActivity">
         </activity>
-        <activity android:name=".activity.ServiceTutorialActivity">
-
+        <activity android:name=".activity.AsyncMessageHandleActivity">
         </activity>
         <activity android:name=".activity.ActivityDownloadAsyncTask">
+        </activity>
+
+        <service android:name=".service.TestService">
+        </service>
+        <service android:name=".service.TestIntentService">
+        </service>
+
+        <activity android:name=".activity.ServiceManagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.PullToRefreshNewActivity">
         </activity>
     </application>
 

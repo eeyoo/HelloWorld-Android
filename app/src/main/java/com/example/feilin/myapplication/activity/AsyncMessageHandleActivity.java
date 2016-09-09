@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.example.feilin.myapplication.R;
 
 
-public class ServiceTutorialActivity extends AppCompatActivity implements View.OnClickListener {
+public class AsyncMessageHandleActivity extends AppCompatActivity implements View.OnClickListener {
 
     public final static int UPDATE_TEXT = 1;
 
